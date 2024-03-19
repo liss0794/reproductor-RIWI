@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ingreso</title>
+</head>
+
+<body style="background-color: blueviolet;: rgb(194, 5, 187);" >
+    <header">
+        <center>
+            <h1>Formulario para los nuevos coders de RIWI</h1>
+        </center>
+    </header>
+    <main>
+        <form action="./src/pages/server.html" method="post" enctype="multipart/form-data">
+            <fieldset style="background-color: rgb(202, 168, 235);">
+                <legend>Informacion basica</legend>
+                <div>
+                    <label for="nombre" required>Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre">
+
+                </div>
+                <br>
+                <div>
+                    <label for="apellido" required>Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido">
+
+                </div>
+                <br>
+                <div>
+                    <label for="correo " required>Correo electronico</label>
+                    <input type="email" name="correo" id="correo" placeholder="ingresa tu correo">
+                </div>
+                <br>
+                <div>
+                    <label for="contraseña " required>Ingrese una contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña"
+                        placeholder=" min 8 caracteres">
+                </div>
+                <br>
+                <div>
+                    <label for="confirmacion_contraseña" required>Confirme la contraseña</label>
+                    <input type="password" name="confirmacion_contraseña" id="confirmacion_contraseña"
+                        placeholder="min 8 caracteres">
+                </div>
+                <br>
+                <div>
+                    <label for="municipio_residencia" required>Municipio de residencia</label>
+                    <select name="municipio_residencia" id="municipio_residencia">
+                        <option value="" disabled selected>Elija una opcion</option>
+                        <option value="barbosa">Barbosa</option>
+                        <option value="girardota">Girardota</option>
+                        <option value="copacabana">Copacabana</option>
+                        <option value="bello">Bello</option>
+                        <option value="medellin">Medellin</option>
+                        <option value="itagui">Itagui</option>
+                        <option value="envigado">Envigado</option>
+                        <option value="sabaneta">Sabaneta</option>
+                        <option value="la_estrella">La estrella</option>
+                        <option value="caldas">Caldas</option>
+                        <option value="amaga">Amaga</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                </label>
+                <div>
+                    <label for="otro ">Si su opcion fue otro, escriba cual</label>
+                    <input type="text" name="otro" id="otro" placeholder="Nombre de municipio">
+                </div>
+                <br>
+                <div>
+                    <label for="telefono" required>Numero de telefono</label>
+                    <input type="tel" name="telefono" id="telefono" value="+57 "
+                        placeholder="ingrese su numero de telefono">
+                </div>
+                <br>
+                <div>
+                    <label for="fecha_nacimiento" required>Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                </div>
+                <br>
+                <div>
+                    <label for="color_favorito" required>Color favorito </label>
+                    <input type="color" name="color_favorito" id="color_favorito">
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset style="background-color: rgb(202, 168, 235);">
+                <legend>Detalles academicos</legend>
+                <br>
+                <div>
+                    <label for="nivel_educativo" required>Nivel educativo</label> <br>
+                    <label for="nivel_educativo">Basico, Medio, Titulado</label> <br>
+                    <input type="range" name="nivel_educativo" id="nivel_educativo">
+                </div>
+                <br>
+                <div>
+                    <p>Envie su CV desde su equipo o por un enlace</p>
+                </div>
+                <div>
+                    <label for="cv"> Adjuntar enlace de CV </label><br>
+                    <input type="url" name="cv" id="cv">
+                </div>
+                <br>
+                <div>
+                    <label for="cv"> Adjuntar CV desde el equipo </label><br>
+                    <input type="file" name="cv" id="cv">
+                </div>
+                <br>
+                <div>
+                    <label for="fecha_inicio_estudios" required>fecha de inicio de estudios</label><br>
+                    <input type="date" name="fecha_inicio_estudios" id="fecha_inicio_estudios">
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset style="background-color: rgb(202, 168, 235);">
+                <legend>Experiencia laboral</legend>
+                <div> 
+                    <label for="descripcion_experiencia" required>Descripcion de su experiencia laboral</label> <br>
+                    <textarea name="descripcion_experiencia" id="descripcion_experiencia" cols="30" rows="10"
+                        placeholder=""></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="foto_perfil" required>Ingresa una foto de perfil</label>
+                        <div>
+                            <label for="foto_perfil"> adjuntar Foto por enlace </label><br>
+
+                            <input type="url" name="foto_perfil" id="foto_perfil">
+                        </div>
+                    <br>
+                        <div>
+                            <label for="foto_perfil" > aadjuntar Foto desde el equipo </label><br>
+                            <input type="file" name="foto_perfil" id="foto_perfil">
+                        </div>
+                </div>
+            </fieldset>
+    </main>
+    <footer>
+        <h2>
+            <center>
+            Gracias por ingresar su informacion. pronto nos pondremos en contacto!
+            </center>
+        </h2>
+    </footer>
+</body>
+
+</html>
